@@ -1,0 +1,145 @@
+:root {
+  --aep-red: #e52e2e;
+  --aep-gray: #666;
+  --aep-light: #f7f7f7;
+  --aep-dark: #222;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: var(--aep-light);
+  color: var(--aep-dark);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+/* Header Styles */
+header {
+  background: var(--aep-red);
+  color: #fff;
+  margin-bottom: 2rem;
+}
+header .hero {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+.logo {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+.tagline, .cta {
+  font-size: 1.25rem;
+}
+nav {
+  padding: 1rem 0;
+  background: var(--aep-gray);
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0 1.5rem;
+}
+nav a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+.cta, .big-cta {
+  background: #fff;
+  color: var(--aep-red);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 24px;
+  margin: 0.5rem 0;
+  display: inline-block;
+  transition: background .2s;
+}
+.cta:hover, .big-cta:hover {
+  background: var(--aep-light);
+  color: var(--aep-dark);
+}
+
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+section {
+  margin-bottom: 2.5rem;
+}
+h1, h2, h3 {
+  color: var(--aep-red);
+}
+ul, ol {
+  margin-left: 1.5rem;
+}
+a.tel {
+  color: var(--aep-red);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.faq-list .faq-item {
+  background: #fff;
+  border-left: 4px solid var(--aep-red);
+  margin-bottom: 1.3rem;
+  padding: 1rem;
+  border-radius: 6px;
+}
+.faq-item h3 {
+  margin-top: 0;
+}
+.mini-blog {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 6px;
+}
+#cta-final {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.big-cta {
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  margin-top: 1.5rem;
+}
+.disclaimer {
+  font-size: 0.98rem;
+  color: var(--aep-gray);
+}
+
+footer {
+  background: var(--aep-red);
+  color: #fff;
+  padding: 1.5rem 0 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  nav li {
+    display: block;
+    margin: 0.7rem 0;
+  }
+  .big-cta, .cta {
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+  }
+  main {
+    padding: 0 0.5rem;
+  }
+}
